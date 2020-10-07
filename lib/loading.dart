@@ -14,6 +14,7 @@ class _LoadingState extends State<Loading> {
   void connectApi() async{
     CovidCases instance=CovidCases();
     await instance.getCountries();
+    print(instance.countries);
     /*Navigator.pushReplacementNamed(context, '/home',arguments: {
       'location':instance.location,
       'time':instance.time,
